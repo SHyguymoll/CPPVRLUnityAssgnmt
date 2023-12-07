@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // look ma, no hands!
+        /*
+            - moments before crashing the car
+        */
     }
 }
