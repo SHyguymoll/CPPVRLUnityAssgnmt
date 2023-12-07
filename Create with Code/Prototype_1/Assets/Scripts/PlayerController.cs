@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 20.5F;
-    public float turnSpeed;
-    public float horiInp;
-    public float vertInp;
+    private float speed = 16.11F;
+    private float turnSpeed = 18;
+    private float horiInp;
+    private float vertInp;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        // Get inputs
         horiInp = Input.GetAxis("Horizontal");
         vertInp = Input.GetAxis("Vertical");
         // look ma, no hands!
