@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 20.5F;
     public float turnSpeed;
+    public float horiInp;
     
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        horiInp = Input.GetAxis("Horizontal");
         // look ma, no hands!
         /*
             - moments before crashing the car
@@ -25,6 +27,6 @@ public class PlayerController : MonoBehaviour
         /*
             - moments before veering the car off of a cliff
         */
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horiInp);
     }
 }
