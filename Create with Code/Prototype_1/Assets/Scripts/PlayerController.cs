@@ -17,5 +17,6 @@ public class PlayerController : MonoBehaviour
         /*
             - moments before crashing the car
         */
+        transform.Translate(Vector3.forward);
     }
 }
