@@ -29,6 +29,6 @@ public class PlayerController : MonoBehaviour
         /*
             - moments before veering the car off of a cliff
         */
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horiInp);
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horiInp);
     }
 }
